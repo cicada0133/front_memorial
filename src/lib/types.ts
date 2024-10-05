@@ -19,9 +19,8 @@ export interface Place {
 	author: User; // Ссылка на автора
 
 	isActive: boolean; // логическое значение для статуса
-	
+
 	category: CategoryType;
-	
 }
 
 export interface PlacesGroup {
@@ -29,20 +28,15 @@ export interface PlacesGroup {
 	places: Place[];
 }
 
-
 export interface User {
-
 	username: string; // Имя пользователя
 	email: string; // Email пользователя
 	institution: Institution; //Вуз участника
+}
 
-  }
-
-
-  // Интерфейс для учебного заведения
+// Интерфейс для учебного заведения
 export interface Institution {
-	
 	location: Coord;
 	name: string; // Название учебного заведения
-	city: string; // Город или местоположение учебного заведения 
+	city: string; // Город или местоположение учебного заведения
 }
